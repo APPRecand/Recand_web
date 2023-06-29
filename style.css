@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(165, 165, 168, 0.682);
+  border-bottom: 0.5px solid rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  padding: 15rem;
+  width: 50%;
+}
+
+.img-logo {
+  border-right: 1px solid black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  width: 100%;
+  bottom: 0;
+}
