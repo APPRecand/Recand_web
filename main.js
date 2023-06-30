@@ -18,8 +18,11 @@ showPass();
 
 const inputEmailIsValid = () => {
   const inputEmail = document.querySelector('#floatingInputEmail');
+  const labelEmail = document.querySelector('.label-email');
   if (inputEmail.value == '') {
     inputEmail.classList.add('is-invalid');
+    labelEmail.textContent = 'Insira um email válido.';
+    labelEmail.classList.add('invalid-feedback');
   }
 };
 
@@ -27,9 +30,12 @@ const inputPassIsValid = () => {
   const inputPass = document.querySelector('#floatingInputPassword');
   const elementInput = document.querySelector('.input-pass');
   const eye = document.querySelector('.lnr-eye');
+  const labelPass = document.querySelector('.label-pass');
   if (inputPass.value == '') {
     inputPass.classList.add('is-invalid');
     elementInput.removeChild(eye);
+    labelPass.textContent = 'Insira uma senha válida.';
+    labelPass.classList.add('invalid-feedback');
   }
 };
 
