@@ -15,6 +15,10 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
   </head>
   <body>
     <header class="header-container">
@@ -46,12 +50,13 @@
             />
             <label for="floatingInputEmail">Email</label>
           </div>
-          <div class="form-floating">
+
+          <div class="form-floating d-flex">
+            <span class="lnr lnr-eye"></span>
             <input
               type="password"
-              title="Insira sua senha"
-              class="form-control border border-secondary-subtle"
               id="floatingInputPassword"
+              class="form-control border border-secondary-subtle"
               placeholder="Senha"
             />
             <label for="floatingInputPassword">Senha</label>
@@ -79,7 +84,17 @@
       </section>
     </main>
 
-    <footer class="footer-container">Contato</footer>
+    <footer class="footer-container">
+      <section class="contact">
+        <p>
+          Developed by
+          <a href="https://github.com/l7coutinho"> @l7coutinho </a>
+          and
+          <a href="https://github.com/l7coutinho"> @romulothg21 </a>
+        </p>
+        <p class="rights">&copy; All rights reserved.</p>
+      </section>
+    </footer>
 
     <script src="main.js"></script>
   </body>
