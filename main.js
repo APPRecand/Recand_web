@@ -1,28 +1,15 @@
 const showPass = () => {
-  const eyeBtn = document.querySelector('.lnr-eye');
+  const eyeBtn = document.querySelector('.bi');
   const inputPass = document.querySelector('#floatingInputPassword');
 
-  if (window.innerWidth <= 768) {
-    eyeBtn.addEventListener('click', () => {
-      if (inputPass.type === 'password') {
-        inputPass.type = 'text';
-      } else {
-        inputPass.type = 'password';
-      }
-    });
-  } else {
-    eyeBtn.addEventListener('mousedown', () => {
+  eyeBtn.addEventListener('click', (element) => {
+    element.preventDefault();
+    if (inputPass.type === 'password') {
       inputPass.type = 'text';
-    });
-
-    eyeBtn.addEventListener('mouseup', () => {
+    } else {
       inputPass.type = 'password';
-    });
-
-    eyeBtn.addEventListener('mousemove', () => {
-      inputPass.type = 'password';
-    });
-  }
+    }
+  });
 };
 
 const inputEmailIsValid = () => {
