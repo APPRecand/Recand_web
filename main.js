@@ -1,17 +1,28 @@
 const showPass = () => {
   const eyeBtn = document.querySelector('.lnr-eye');
   const inputPass = document.querySelector('#floatingInputPassword');
-  eyeBtn.addEventListener('mousedown', () => {
-    inputPass.type = 'text';
-  });
 
-  eyeBtn.addEventListener('mouseup', () => {
-    inputPass.type = 'password';
-  });
+  if (window.innerWidth <= 768) {
+    eyeBtn.addEventListener('click', () => {
+      if (inputPass.type === 'password') {
+        inputPass.type = 'text';
+      } else {
+        inputPass.type = 'password';
+      }
+    });
+  } else {
+    eyeBtn.addEventListener('mousedown', () => {
+      inputPass.type = 'text';
+    });
 
-  eyeBtn.addEventListener('mousemove', () => {
-    inputPass.type = 'password';
-  });
+    eyeBtn.addEventListener('mouseup', () => {
+      inputPass.type = 'password';
+    });
+
+    eyeBtn.addEventListener('mousemove', () => {
+      inputPass.type = 'password';
+    });
+  }
 };
 
 showPass();
