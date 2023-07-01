@@ -4,16 +4,38 @@
     justify-content: center;
   }
 
+  .main-navbar img {
+    margin-left: 0;
+  }
+
   main {
-    display: flex;
     flex-direction: column;
   }
 
-  .login {
-    padding: 10rem 0rem;
+  .img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    border-right: none;
   }
 
-  .footer-container {
-    width: 100%;
+  .img-logo img {
+    width: 150px;
+  }
+
+  .login {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .user-content {
+    padding-top: 0;
+    justify-content: center;
+    flex-direction: column-reverse;
   }
 }
