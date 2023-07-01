@@ -25,8 +25,6 @@ const showPass = () => {
   }
 };
 
-showPass();
-
 const inputEmailIsValid = () => {
   const inputEmail = document.querySelector('#floatingInputEmail');
   const labelEmail = document.querySelector('.label-email');
@@ -59,4 +57,7 @@ const submitBtn = () => {
   });
 };
 
-submitBtn();
+window.onload = () => {
+  showPass();
+  submitBtn();
+};
