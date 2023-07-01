@@ -67,6 +67,18 @@ main {
   position: absolute;
   margin-right: 15px;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0px 2px;
+}
+
+.input-pass button:hover {
+  background-color: rgb(238, 235, 235);
+}
+
+.input-pass button:active {
+  padding: 0.5px;
 }
 
 .footer-container {
