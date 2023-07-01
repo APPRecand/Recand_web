@@ -29,7 +29,7 @@ const inputEmailIsValid = () => {
 const inputPassIsValid = () => {
   const inputPass = document.querySelector('#floatingInputPassword');
   const elementInput = document.querySelector('.input-pass');
-  const eye = document.querySelector('.lnr-eye');
+  const eye = document.querySelector('.bi');
   const labelPass = document.querySelector('.label-pass');
   if (inputPass.value == '') {
     inputPass.classList.add('is-invalid');
