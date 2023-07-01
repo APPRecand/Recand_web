@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  .main-navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login {
+    padding: 10rem 0rem;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+}
