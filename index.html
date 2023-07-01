@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="mobile.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,18 +21,14 @@
     <header class="header-container">
       <nav class="main-navbar">
         <div>
-          <h2 class="px-3">LOGOMARCA AQUI</h2>
-        </div>
-
-        <div class="px-5">
-          <button class="btn btn-outline-primary btn-sm px-3">More</button>
+          <img src="img/logo-bmw-512.png" alt="Logomarca Projeto" />
         </div>
       </nav>
     </header>
 
     <main>
       <section class="img-logo">
-        <img src="img/logo-black-remove.png" alt="Logomarca Projeto" />
+        <img src="img/logo-bmw-512.png" alt="Logomarca Projeto" />
       </section>
 
       <section class="login row mb-3">
@@ -52,7 +45,7 @@
             <label for="floatingInputEmail" class="label-email">Email</label>
           </div>
 
-          <div class="input-pass form-floating d-flex">
+          <div class="input-pass form-floating">
             <span class="lnr lnr-eye"></span>
             <input
               type="password"
@@ -62,10 +55,16 @@
               placeholder="Senha"
               required
             />
-            <label for="floatingInputPassword" class="label-pass">Senha</label>
+            <label for="floatingInputPassword" class="label-pass">
+              Senha
+            </label>
           </div>
 
-          <div class="pt-3 d-flex justify-content-between flex-row-reverse">
+          <div class="user-content pt-2">
+            <label for="remember-me">
+              <input type="checkbox" name="remeber" id="remember-me" />
+              Lembrar-se
+            </label>
             <a
               title="Esqueci minha senha"
               href="#"
@@ -73,14 +72,9 @@
             >
               Esqueci minha senha
             </a>
-
-            <label for="remember-me">
-              <input type="checkbox" name="remeber" id="remember-me" />
-              Lembrar-se
-            </label>
           </div>
 
-          <div class="d-grid gap-2 pt-4">
+          <div class="d-grid gap-2 mt-2">
             <button class="submitBtn btn btn-outline-primary">Entrar</button>
           </div>
         </form>

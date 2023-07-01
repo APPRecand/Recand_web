@@ -12,7 +12,7 @@
 
 .main-navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 60px;
@@ -22,6 +22,12 @@
   background-color: rgb(255, 255, 255);
 }
 
+.main-navbar img {
+  width: 60px;
+  margin-left: 20px;
+  padding: 3px;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -29,26 +35,41 @@ main {
 }
 
 .login {
-  padding: 17rem 18rem;
-  width: 50%;
+  padding: 17rem;
 }
 
 .img-logo {
+  width: 25%;
   border-right: 1px solid black;
+}
+
+.img-logo img {
+  width: 350px;
+}
+
+.input-pass {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.user-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .lnr-eye {
   position: absolute;
-  top: 22px;
-  margin-left: 327px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
 .footer-container {
+  border-top: 0.5px solid rgb(163, 163, 163);
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 0.5px solid rgb(163, 163, 163);
   width: 100%;
   bottom: 0;
 }
