@@ -5,8 +5,12 @@ const showPass = () => {
   eyeBtn.addEventListener('click', (element) => {
     element.preventDefault();
     if (inputPass.type === 'password') {
+      eyeBtn.classList.remove('bi-eye');
+      eyeBtn.classList.add('bi-eye-slash');
       inputPass.type = 'text';
     } else {
+      eyeBtn.classList.remove('bi-eye-slash');
+      eyeBtn.classList.add('bi-eye');
       inputPass.type = 'password';
     }
   });
