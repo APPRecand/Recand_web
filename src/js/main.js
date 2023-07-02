@@ -24,6 +24,12 @@ const inputEmailIsValid = () => {
     labelEmail.textContent = 'Insira um email válido.';
     labelEmail.classList.add('invalid-feedback');
   }
+
+  inputEmail.addEventListener('keypress', () => {
+    inputEmail.classList.remove('is-invalid');
+    labelEmail.textContent = 'Email';
+    labelEmail.classList.remove('invalid-feedback');
+  });
 };
 
 const inputPassIsValid = () => {
@@ -37,6 +43,12 @@ const inputPassIsValid = () => {
     labelPass.textContent = 'Insira uma senha válida.';
     labelPass.classList.add('invalid-feedback');
   }
+
+  inputPass.addEventListener('keypress', () => {
+    inputPass.classList.remove('is-invalid');
+    labelPass.textContent = 'Senha';
+    labelPass.classList.remove('invalid-feedback');
+  });
 };
 
 const submitBtn = () => {
