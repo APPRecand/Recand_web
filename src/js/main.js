@@ -48,6 +48,7 @@ const inputPassIsValid = () => {
     inputPass.classList.remove('is-invalid');
     labelPass.textContent = 'Senha';
     labelPass.classList.remove('invalid-feedback');
+    elementInput.appendChild(eye);
   });
 };
 
